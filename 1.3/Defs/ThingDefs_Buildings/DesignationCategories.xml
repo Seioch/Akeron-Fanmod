@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DesignatorDropdownGroupDef>
+    <defName>AKN_CablesDropdown</defName>
+	<label>Akeron Cables</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>AKN_PapersDropdown</defName>
+	<label>Akeron Papers</label>
+  </DesignatorDropdownGroupDef>  
+  
+</Defs>

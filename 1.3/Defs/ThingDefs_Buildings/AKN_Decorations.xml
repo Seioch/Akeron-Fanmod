@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--=============================== Plushies ===================================-->
+
+<ThingDef ParentName="FurnitureWithQualityBase">
+	<defName>AKN_ComfortingPlush</defName>
+	<label>Comforting Plush</label>
+	<thingClass>Building</thingClass>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<clearBuildingArea>false</clearBuildingArea>
+	<!-- Add a comp ticker to let the AoE hediff granter to have a CompTick -->
+	<tickerType>Normal</tickerType>
+	<description>An adorable plush which kind of resembles a panda. Something about this design specifically makes one feel more comforted when resting.</description>
+	  <uiIconPath>UI/AKN_ComfortingPlushUI</uiIconPath>
+	  <graphicData>
+	  <texPath>Things/Building/Plush/AKN_ComfortingPlush</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <drawSize>(1.3,1.3)</drawSize>
+	</graphicData>
+	<stuffCategories>
+	  <li>Fabric</li>
+	  <li>Leathery</li>
+	</stuffCategories>
+	<costStuffCount>25</costStuffCount>	
+	<rotatable>true</rotatable>
+	<defaultPlacingRot>South</defaultPlacingRot>	
+	<building>
+	  <isEdifice>false</isEdifice>
+	  <canPlaceOverWall>true</canPlaceOverWall>
+	</building>
+	<blockWind>false</blockWind>
+	<altitudeLayer>BuildingOnTop</altitudeLayer>
+	<passability>Standable</passability>
+	<pathCost>3</pathCost>
+	<fillPercent>0.15</fillPercent>
+	<statBases>
+	  <MaxHitPoints>30</MaxHitPoints>
+	  <WorkToBuild>1000</WorkToBuild>
+	  <Flammability>1</Flammability>
+	  <Beauty>5</Beauty>
+	  <Mass>0.03</Mass>	  
+	</statBases>
+	<designationCategory>Furniture</designationCategory>
+	<researchPrerequisites>
+	  <li>AKN_AdorableDoodles</li>
+	</researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <Comfort>0.05</Comfort>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <maxDistance>10</maxDistance>
+      </li>
+	  <li Class="AkeronStatues.CompProperties_HediffEmanator">
+	  	<hediff>AKN_PlushComfortHediff</hediff>
+		<hediffRadius>10</hediffRadius>
+		<hediffInterval>120</hediffInterval>
+	  </li>
+    </comps>		
+	<placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+	
+</ThingDef>
+	
+	
+<ThingDef ParentName="FurnitureWithQualityBase">
+	<defName>AKN_MotivatingPlush</defName>
+	<label>Motivating Plush</label>
+	<thingClass>Building</thingClass>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<clearBuildingArea>false</clearBuildingArea>
+	<!-- Add a comp ticker to let the AoE hediff granter to have a CompTick -->
+	<tickerType>Normal</tickerType>
+	<description>An adorable plush which kind of resembles a bunny. Something about this design specifically makes one feel more motivated when working.</description>
+	<uiIconPath>UI/AKN_MotivatingPlushUI</uiIconPath>
+	<graphicData>
+	  <texPath>Things/Building/Plush/AKN_MotivatingPlush</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <drawSize>(1.3,1.3)</drawSize>
+	</graphicData>
+	<stuffCategories>
+	  <li>Fabric</li>
+	  <li>Leathery</li>
+	</stuffCategories>
+	<costStuffCount>25</costStuffCount>	
+	<rotatable>true</rotatable>
+	<defaultPlacingRot>South</defaultPlacingRot>
+	<building>
+	  <isEdifice>false</isEdifice>
+	  <canPlaceOverWall>true</canPlaceOverWall>
+	</building>
+	<blockWind>false</blockWind>
+	<altitudeLayer>BuildingOnTop</altitudeLayer>	
+	<passability>Standable</passability>
+	<pathCost>3</pathCost>
+	<fillPercent>0.15</fillPercent>
+	<statBases>
+	  <MaxHitPoints>30</MaxHitPoints>
+	  <WorkToBuild>1000</WorkToBuild>
+	  <Flammability>1</Flammability>
+	  <Beauty>3</Beauty>
+	  <Mass>0.03</Mass>	  
+	</statBases>
+	<designationCategory>Misc</designationCategory>
+	<researchPrerequisites>
+	  <li>AKN_AdorableDoodles</li>
+	</researchPrerequisites>
+	<comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <WorkTableWorkSpeedFactor>0.04</WorkTableWorkSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+		<maxDistance>20</maxDistance>
+      </li>
+	  <li Class="AkeronStatues.CompProperties_HediffEmanator">
+	  	<hediff>AKN_PlushComfortHediff</hediff>
+		<hediffRadius>10</hediffRadius>
+		<hediffInterval>120</hediffInterval>
+	  </li>
+    </comps>
+	<placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+	
+</ThingDef>
+
+<ThingDef ParentName="FurnitureWithQualityBase">
+	<defName>AKN_RestoringPlush</defName>
+	<label>Restoring Plush</label>
+	<thingClass>Building</thingClass>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<clearBuildingArea>false</clearBuildingArea>
+	<!-- Add a comp ticker to let the AoE hediff granter to have a CompTick -->
+	<tickerType>Normal</tickerType>
+	<description>An adorable plush which kind of resembles a cat. Something about this design specifically makes one feel more restored when healing.</description>
+	<uiIconPath>UI/AKN_RestoringPlushUI</uiIconPath>
+	<graphicData>
+	  <texPath>Things/Building/Plush/AKN_RestoringPlush</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <drawSize>(1.3,1.3)</drawSize>
+    </graphicData>
+	<stuffCategories>
+	  <li>Fabric</li>
+	  <li>Leathery</li>
+	</stuffCategories>
+	<costStuffCount>25</costStuffCount>	
+	<rotatable>true</rotatable>
+	<defaultPlacingRot>South</defaultPlacingRot>	
+	<building>
+	  <isEdifice>false</isEdifice>
+	  <canPlaceOverWall>true</canPlaceOverWall>
+	</building>
+	<blockWind>false</blockWind>
+	<altitudeLayer>BuildingOnTop</altitudeLayer>	
+	<passability>Standable</passability>
+	<pathCost>3</pathCost>
+	<fillPercent>0.15</fillPercent>
+	<statBases>
+	  <MaxHitPoints>30</MaxHitPoints>
+	  <WorkToBuild>1000</WorkToBuild>
+	  <Flammability>1</Flammability>
+	  <Beauty>3</Beauty>
+	  <Mass>0.03</Mass>
+	</statBases>
+	<designationCategory>Misc</designationCategory>
+	<researchPrerequisites>
+	  <li>AKN_AdorableDoodles</li>
+	</researchPrerequisites>
+	<comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <MedicalTendQualityOffset>0.05</MedicalTendQualityOffset>
+		  <ImmunityGainSpeedFactor>0.01</ImmunityGainSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <maxDistance>10</maxDistance>
+      </li>
+	  <li Class="AkeronStatues.CompProperties_HediffEmanator">
+	  	<hediff>AKN_PlushComfortHediff</hediff>
+		<hediffRadius>10</hediffRadius>
+		<hediffInterval>120</hediffInterval>
+	  </li>
+    </comps>
+	<placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+	
+</ThingDef>
+	
+</Defs>

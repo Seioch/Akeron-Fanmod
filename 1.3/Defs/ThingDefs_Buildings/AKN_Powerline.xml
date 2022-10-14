@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--=============================== Conduits ===================================-->
+
+<ThingDef ParentName="BuildingBase">
+    <defName>AKN_NeatCables</defName>
+    <label>Neat Cables</label>
+    <description>A satisfyingly arranged line of cables coated with an extra layer of protective insulation. Can be placed under walls and other buildings.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Powerline/AKN_NeatCables_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Transmitter</linkType>
+      <linkFlags>
+        <li>PowerConduit</li>
+      </linkFlags>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <uiIconPath>UI/AKN_NeatCablesUI</uiIconPath>
+    <uiIconScale>0.7</uiIconScale>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Powerline/AKN_NeatCables_Blueprint</texPath>
+      </blueprintGraphicData>
+    </building>
+    <drawerType>MapMeshOnly</drawerType>
+    <altitudeLayer>Conduits</altitudeLayer>
+    <passability>Standable</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>295</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <costList>
+      <Steel>2</Steel>
+	  <Chemfuel>1</Chemfuel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_Conduit</li>
+    </placeWorkers>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <designationCategory>Power</designationCategory>
+	<designatorDropdown>AKN_CablesDropdown</designatorDropdown>
+    <constructEffect>ConstructMetal</constructEffect>
+    <clearBuildingArea>false</clearBuildingArea>
+    <designationHotKey>Misc1</designationHotKey>
+    <researchPrerequisites>
+      <li>AKN_CableManagement</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+<ThingDef ParentName="BuildingBase">
+    <defName>AKN_DecorativeCables</defName>
+    <label>Decorative Cables</label>
+    <description>A beautiful arrangement of symbols made from a mysterious chemical mixture which sets into the floor to become a pristine imprint.
+
+Interestingly, the symbols also seem to be conductive and can act as a power conduit even though it does not connect at several points throughout the design. Can be placed under walls and other buildings.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Powerline/AKN_DecorativeCables_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Transmitter</linkType>
+      <linkFlags>
+        <li>PowerConduit</li>
+      </linkFlags>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <uiIconPath>UI/AKN_DecorativeCablesUI</uiIconPath>
+    <uiIconScale>0.7</uiIconScale>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Powerline/AKN_DecorativeCables_Blueprint</texPath>
+      </blueprintGraphicData>
+    </building>
+    <drawerType>MapMeshOnly</drawerType>
+    <altitudeLayer>Conduits</altitudeLayer>
+    <passability>Standable</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>885</WorkToBuild>
+      <Flammability>0.0</Flammability>
+	  <Beauty>6</Beauty>
+    </statBases>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <costList>
+      <Silver>10</Silver>
+	  <Neutroamine>1</Neutroamine>
+	  <Chemfuel>1</Chemfuel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_Conduit</li>
+    </placeWorkers>
+	<isAutoAttackableMapObject>false</isAutoAttackableMapObject>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <designationCategory>Power</designationCategory>
+	<designatorDropdown>AKN_CablesDropdown</designatorDropdown>
+    <constructEffect>ConstructMetal</constructEffect>
+    <clearBuildingArea>false</clearBuildingArea>
+    <designationHotKey>Misc1</designationHotKey>
+    <researchPrerequisites>
+      <li>AKN_CableManagement</li>
+	  <li>AKN_AdorableDoodles</li>
+    </researchPrerequisites>
+  </ThingDef> 
+
+<ThingDef ParentName="BuildingBase">
+    <defName>AKN_OverheadCables</defName>
+    <label>Overhead Cables</label>
+    <description>A line of Neat Cables sturdy enough to be layed up in the rafters or even hung up as powerlines. Can be placed over walls and other buildings.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Powerline/AKN_OverheadCables_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MetaOverlay</shaderType>
+      <linkType>Transmitter</linkType>
+      <linkFlags>
+        <li>PowerConduit</li>
+      </linkFlags>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <uiIconPath>UI/AKN_OverheadCablesUI</uiIconPath>
+    <uiIconScale>0.7</uiIconScale>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Powerline/AKN_OverheadCables_Blueprint</texPath>
+      </blueprintGraphicData>
+    </building>
+    <drawerType>MapMeshOnly</drawerType>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <passability>Standable</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>413</WorkToBuild>
+      <Flammability>0.0</Flammability>
+    </statBases>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <costList>
+      <Steel>3</Steel>
+	  <Chemfuel>1</Chemfuel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_Conduit</li>
+    </placeWorkers>
+	<isAutoAttackableMapObject>false</isAutoAttackableMapObject>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <designationCategory>Power</designationCategory>
+	<designatorDropdown>AKN_CablesDropdown</designatorDropdown>
+    <constructEffect>ConstructMetal</constructEffect>
+    <clearBuildingArea>false</clearBuildingArea>
+    <designationHotKey>Misc1</designationHotKey>
+    <researchPrerequisites>
+      <li>AKN_CableManagement</li>
+    </researchPrerequisites>
+  </ThingDef> 
+  
+<!--=============================== Loose Cables ===================================-->
+
+<ThingDef ParentName="BuildingBase">
+		<defName>AKN_LooseCablesA</defName>
+		<label>Loose Cables A</label>
+		<thingClass>Building</thingClass>
+		<clearBuildingArea>false</clearBuildingArea>
+		
+		<description>Loose hanging cables ? They arn't even connected ! Seems odd to leave something like this here, but it must be for asthetics or something so its ignoreable.</description>
+		<uiIconPath>UI/AKN_LooseCablesAUI</uiIconPath>
+		<graphicData>
+			<texPath>Things/Building/Powerline/AKN_LooseCablesA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MetaOverlay</shaderType>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<costList>
+		  <Chemfuel>1</Chemfuel>
+          <Steel>1</Steel>
+         </costList>
+		<rotatable>true</rotatable>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<passability>Standable</passability>
+		<pathCost>0</pathCost>
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>295</WorkToBuild>
+			<Flammability>0.0</Flammability>
+		</statBases>
+		<designationCategory>Power</designationCategory>
+		<designatorDropdown>AKN_CablesDropdown</designatorDropdown>
+		<researchPrerequisites>
+			<li>AKN_CableManagement</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+<ThingDef ParentName="BuildingBase">
+		<defName>AKN_LooseCablesB</defName>
+		<label>Loose Cables B</label>
+		<thingClass>Building</thingClass>
+		<clearBuildingArea>false</clearBuildingArea>
+		
+		<description>Loose hanging cables ? They arn't even connected ! Seems odd to leave something like this here, but it must be for asthetics or something so its ignoreable.</description>
+		<uiIconPath>UI/AKN_LooseCablesBUI</uiIconPath>
+		<graphicData>
+			<texPath>Things/Building/Powerline/AKN_LooseCablesB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>MetaOverlay</shaderType>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<costList>
+		  <Chemfuel>1</Chemfuel>
+          <Steel>1</Steel>
+         </costList>
+		<rotatable>true</rotatable>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<passability>Standable</passability>
+		<pathCost>0</pathCost>
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>295</WorkToBuild>
+			<Flammability>0.0</Flammability>
+		</statBases>
+		<designationCategory>Power</designationCategory>
+		<designatorDropdown>AKN_CablesDropdown</designatorDropdown>
+		<researchPrerequisites>
+			<li>AKN_CableManagement</li>
+		</researchPrerequisites>
+	</ThingDef>	
+	
+</Defs>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--=============================== Happiness hediff ===================================-->
+
+  <HediffDef>
+    <defName>AKN_PlushComfortHediff</defName>
+    <label>comforting plush</label>
+    <description>Being near this strange plush makes me happy.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.75</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>comfy</label>
+        <painFactor>0.95</painFactor>
+        <capMods>
+            <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.02</offset>
+            </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>AKN_PlushComfort</defName>
+    <thoughtClass>ThoughtWorker_Hediff</thoughtClass>
+    <hediff>AKN_PlushComfortHediff</hediff>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>Comforting Plush</label>
+        <description>This plush makes me happy, I don't know why.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+	
+</Defs>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--=============================== Paper Decor ===================================-->
+
+<ThingDef ParentName="BuildingBase">
+	<defName>AKN_WallPapersA</defName>
+	<label>Wall Papers A</label>
+	<thingClass>Building</thingClass>
+	
+	<clearBuildingArea>false</clearBuildingArea>
+
+	<description>"A few nice drawings someone misplaced? They look good enough to hang up!"</description>	
+	<uiIconPath>UI/AKN_WallPapersAUI</uiIconPath>
+	<graphicData>
+	  <texPath>Things/Building/Papers/AKN_WallPapersA</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>Transparent</shaderType>
+      <drawSize>(1,1)</drawSize>
+	</graphicData>
+	<costList>
+      <WoodLog>5</WoodLog>
+    </costList>
+	<rotatable>true</rotatable>
+	<defaultPlacingRot>South</defaultPlacingRot>
+	<building>
+	  <isEdifice>false</isEdifice>
+	  <canPlaceOverWall>true</canPlaceOverWall>
+	</building>
+	<blockWind>false</blockWind>
+	<altitudeLayer>BuildingOnTop</altitudeLayer>	
+	<passability>Standable</passability>
+	<pathCost>3</pathCost>
+	<fillPercent>0</fillPercent>
+	<statBases>
+	  <MaxHitPoints>5</MaxHitPoints>
+	  <WorkToBuild>600</WorkToBuild>
+	  <Flammability>1</Flammability>
+	  <Beauty>0</Beauty>
+	  <Mass>0.01</Mass>	  
+	</statBases>
+	<designationCategory>Misc</designationCategory>
+	<designatorDropdown>AKN_PapersDropdown</designatorDropdown>
+	<researchPrerequisites>
+	  <li>AKN_AdorableDoodles</li>
+	</researchPrerequisites>
+	<comps>
+	  <li Class="CompProperties_Facility">
+	    <statOffsets>
+		  <ResearchSpeedFactor>0.01</ResearchSpeedFactor>
+		</statOffsets>
+		<maxSimultaneous>1</maxSimultaneous>
+		<maxDistance>10</maxDistance>
+	  </li>
+	</comps>
+	<placeWorkers>
+	  <li>PlaceWorker_ShowFacilitiesConnections</li>
+	</placeWorkers>
+		
+</ThingDef>
+
+<ThingDef ParentName="BuildingBase">
+	<defName>AKN_WallPapersB</defName>
+	<label>Wall Papers B</label>
+	<thingClass>Building</thingClass>
+	
+	<clearBuildingArea>false</clearBuildingArea>
+
+	<description>"Someone just stuck a bunch of random paper onto the wall, something something Akeron?"</description>
+	<uiIconPath>UI/AKN_WallPapersBUI</uiIconPath>
+	<graphicData>
+	  <texPath>Things/Building/Papers/AKN_WallPapersB</texPath>
+	  <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>Transparent</shaderType>
+      <drawSize>(1,1)</drawSize>
+	</graphicData>
+	<costList>
+      <WoodLog>5</WoodLog>
+    </costList>
+	<rotatable>true</rotatable>
+	<defaultPlacingRot>South</defaultPlacingRot>
+	<building>
+	  <isEdifice>false</isEdifice>
+	  <canPlaceOverWall>true</canPlaceOverWall>
+	</building>
+	<blockWind>false</blockWind>
+	<altitudeLayer>BuildingOnTop</altitudeLayer>	
+	<passability>Standable</passability>
+	<pathCost>3</pathCost>
+	<fillPercent>0</fillPercent>
+	<statBases>
+	  <MaxHitPoints>5</MaxHitPoints>
+	  <WorkToBuild>600</WorkToBuild>
+	  <Flammability>1</Flammability>
+	  <Beauty>1</Beauty>
+	  <Mass>0.01</Mass>	  
+	</statBases>
+	<designationCategory>Misc</designationCategory>
+	<designatorDropdown>AKN_PapersDropdown</designatorDropdown>
+	<researchPrerequisites>
+	  <li>AKN_AdorableDoodles</li>
+	</researchPrerequisites>
+	<comps>
+	  <li Class="CompProperties_Facility">
+	    <statOffsets>
+		  <ResearchSpeedFactor>0.01</ResearchSpeedFactor>
+		</statOffsets>
+		<maxSimultaneous>1</maxSimultaneous>
+		<maxDistance>10</maxDistance>
+	  </li>
+	</comps>
+	<placeWorkers>
+	  <li>PlaceWorker_ShowFacilitiesConnections</li>
+	</placeWorkers>
+		
+</ThingDef>
+
+<ThingDef ParentName="BuildingBase">
+	<defName>AKN_PaperNotesA</defName>
+	<label>Paper Notes A</label>
+	<thingClass>Building</thingClass>
+	
+	<clearBuildingArea>false</clearBuildingArea>
+
+	<description>"A bunch of lovely designs~ We should use some of these ideas!"</description>
+	<uiIconPath>UI/AKN_PaperNotesAUI</uiIconPath>
+	<graphicData>
+	  <texPath>Things/Building/Papers/AKN_PaperNotesA</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>Transparent</shaderType>
+      <drawSize>(1,1)</drawSize>
+	</graphicData>
+	<costList>
+      <WoodLog>5</WoodLog>
+    </costList>
+	<rotatable>true</rotatable>
+	<building>
+	  <isEdifice>false</isEdifice>
+	  <canPlaceOverWall>true</canPlaceOverWall>
+	</building>
+	<blockWind>false</blockWind>
+	<altitudeLayer>BuildingOnTop</altitudeLayer>	
+	<passability>Standable</passability>
+	<pathCost>3</pathCost>
+	<fillPercent>0</fillPercent>
+	<statBases>
+	  <MaxHitPoints>5</MaxHitPoints>
+	  <WorkToBuild>600</WorkToBuild>
+	  <Flammability>1</Flammability>
+	  <Beauty>1</Beauty>
+	  <Mass>0.01</Mass>	  
+	</statBases>
+	<designationCategory>Misc</designationCategory>
+	<designatorDropdown>AKN_PapersDropdown</designatorDropdown>
+	<researchPrerequisites>
+	  <li>AKN_AdorableDoodles</li>
+	</researchPrerequisites>
+	<comps>
+	  <li Class="CompProperties_Facility">
+	    <statOffsets>
+		  <ResearchSpeedFactor>0.01</ResearchSpeedFactor>
+		</statOffsets>
+		<maxSimultaneous>1</maxSimultaneous>
+		<maxDistance>10</maxDistance>
+	  </li>
+	</comps>
+	<placeWorkers>
+	  <li>PlaceWorker_ShowFacilitiesConnections</li>
+	</placeWorkers>
+		
+</ThingDef>
+
+<ThingDef ParentName="BuildingBase">
+	<defName>AKN_PaperNotesB</defName>
+	<label>Paper Notes B</label>
+	<thingClass>Building</thingClass>
+	
+	<clearBuildingArea>false</clearBuildingArea>
+
+	<description>"Ooowh what fancy designs and techniques~ Thanks whoever left these here!"</description>
+	<uiIconPath>UI/AKN_PaperNotesBUI</uiIconPath>
+	<graphicData>
+	  <texPath>Things/Building/Papers/AKN_PaperNotesB</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>Transparent</shaderType>
+      <drawSize>(1,1)</drawSize>
+	</graphicData>
+	<costList>
+      <WoodLog>5</WoodLog>
+    </costList>
+	<rotatable>true</rotatable>
+	<building>
+	  <isEdifice>false</isEdifice>
+	  <canPlaceOverWall>true</canPlaceOverWall>
+	</building>
+	<blockWind>false</blockWind>
+	<altitudeLayer>BuildingOnTop</altitudeLayer>	
+	<passability>Standable</passability>
+	<pathCost>3</pathCost>
+	<fillPercent>0</fillPercent>
+	<statBases>
+	  <MaxHitPoints>5</MaxHitPoints>
+	  <WorkToBuild>600</WorkToBuild>
+	  <Flammability>1</Flammability>
+	  <Beauty>1</Beauty>
+	  <Mass>0.01</Mass>	  
+	</statBases>
+	<designationCategory>Misc</designationCategory>
+	<designatorDropdown>AKN_PapersDropdown</designatorDropdown>
+	<researchPrerequisites>
+	  <li>AKN_AdorableDoodles</li>
+	</researchPrerequisites>
+	<comps>
+	  <li Class="CompProperties_Facility">
+	    <statOffsets>
+		  <ResearchSpeedFactor>0.01</ResearchSpeedFactor>
+		</statOffsets>
+		<maxSimultaneous>1</maxSimultaneous>
+		<maxDistance>10</maxDistance>
+	  </li>
+	</comps>
+	<placeWorkers>
+	  <li>PlaceWorker_ShowFacilitiesConnections</li>
+	</placeWorkers>
+		
+</ThingDef>
+
+<ThingDef ParentName="BuildingBase">
+	<defName>AKN_PaperNotesC</defName>
+	<label>Paper Notes C</label>
+	<thingClass>Building</thingClass>
+	
+	<clearBuildingArea>false</clearBuildingArea>
+
+	<description>"These are some great tips !"</description>
+	<uiIconPath>UI/AKN_PaperNotesCUI</uiIconPath>
+	<graphicData>
+	  <texPath>Things/Building/Papers/AKN_PaperNotesC</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>Transparent</shaderType>
+      <drawSize>(1,1)</drawSize>
+	</graphicData>
+	<costList>
+      <WoodLog>5</WoodLog>
+    </costList>
+	<rotatable>true</rotatable>
+	<building>
+	  <isEdifice>false</isEdifice>
+	  <canPlaceOverWall>true</canPlaceOverWall>
+	</building>
+	<blockWind>false</blockWind>
+	<altitudeLayer>BuildingOnTop</altitudeLayer>	
+	<passability>Standable</passability>
+	<pathCost>3</pathCost>
+	<fillPercent>0</fillPercent>
+	<statBases>
+	  <MaxHitPoints>5</MaxHitPoints>
+	  <WorkToBuild>600</WorkToBuild>
+	  <Flammability>1</Flammability>
+	  <Beauty>1</Beauty>
+	  <Mass>0.01</Mass>	  
+	</statBases>
+	<designationCategory>Misc</designationCategory>
+	<designatorDropdown>AKN_PapersDropdown</designatorDropdown>
+	<researchPrerequisites>
+	  <li>AKN_AdorableDoodles</li>
+	</researchPrerequisites>
+	<comps>
+	  <li Class="CompProperties_Facility">
+	    <statOffsets>
+		  <ResearchSpeedFactor>0.01</ResearchSpeedFactor>
+		</statOffsets>
+		<maxSimultaneous>1</maxSimultaneous>
+		<maxDistance>10</maxDistance>
+	  </li>
+	</comps>
+	<placeWorkers>
+	  <li>PlaceWorker_ShowFacilitiesConnections</li>
+	</placeWorkers>
+		
+</ThingDef>
+	
+</Defs>
